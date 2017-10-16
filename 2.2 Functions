@@ -1,0 +1,38 @@
+var topic = "Functions"
+print("Hello \(topic)!")
+
+//sample code below with 2 PARAMETERs (also works with 1 XD)
+
+func multiplier(value1: Int, value2: Int ) {
+	let result = value1 * value2
+	print("The result is \(result)")
+}
+
+multiplier(value1: 30, value2: 2)
+
+//sample code below for ARGUMENT LABELS
+
+func sayHello(to person: String, and anotherPerson: String) {
+  print("Hello \(person) and \(anotherPerson)")
+}
+
+sayHello(to : "Luke", and : "Dave")
+
+//sample code below for DEFAULT VALUES
+
+func display(teamName: String, score: Int=0) {
+  print("\(teamName): \(score)")
+}
+
+display(teamName: "Cavaliers", score: 100)
+display(teamName: "Wizards")
+
+//sample code below for RETURN VALUES
+
+func multiply(firstNumber: Int, secondNumber: Int) -> Int {
+  return firstNumber * secondNumber
+}
+
+let myResult = multiply(firstNumber: 10, secondNumber: 5)
+ //myResult = 50 
+print("10 * 5 is \(myResult)")
